@@ -15,8 +15,8 @@ export default function RootLayout({
 }) {
   return (
     <ClerkProvider>
-      <html lang="en" className="dark">
-        <body className="min-h-screen bg-slate-950 text-slate-50 antialiased selection:bg-indigo-500/30">
+      <html lang="en" className="dark" suppressHydrationWarning>
+        <body className="min-h-screen bg-slate-950 text-slate-50 antialiased selection:bg-indigo-500/30" suppressHydrationWarning>
           <Providers>{children}</Providers>
         </body>
       </html>
